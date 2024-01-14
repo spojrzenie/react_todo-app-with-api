@@ -1,48 +1,53 @@
-# React Todo App with API (complete)
+# React ToDo Application
 
-It is the third part of the React Todo App with API.
+## Demo
 
-Take your code implemented for [Add and Delete](https://github.com/mate-academy/react_todo-app-add-and-delete)
-and implement the ability to toggle and rename todos.
+You can see the live demo of the application [here](https://spojrzenie.github.io/react_todo-app-with-api/).
 
-> Here is [the working example](https://mate-academy.github.io/react_todo-app-with-api/)
+## Project Description
 
-## Toggling a todo status
+The ToDo application is a simple task management tool built using React. It utilizes an API for data storage and manipulation. This project was created for the purpose of learning and practicing JavaScript programming, working with the React library, and communicating with a server through an API.
 
-Toggle the `completed` status on `TodoStatus` change:
+## Features
 
-- covered the todo with a loader overlay while waiting for API response;
-- the status should be changed on success;
-- show the `Unable to update a todo` notification in case of API error.
+### Adding Tasks
 
-Add the ability to toggle the completed status of all the todos with the `toggleAll` checkbox:
+- You can add a new task by entering its content in the text input field and pressing Enter. If the field is empty, an error message will be displayed.
+- The task is then added to the task list.
 
-- `toggleAll` button should have `active` class only if all the todos are completed;
-- `toggleAll` click changes its status to the opposite one, and sets this new status to all the todos;
-- it should work the same as several individual updates of the todos which statuses were actually changed;
-- do send requests for the todos that were not changed;
+### Editing Tasks
 
-## Renaming a todo
+- You can edit an existing task by double-clicking on its content. After making changes, press Enter or click outside the text field to save the edits.
 
-Implement the ability to edit a todo title on double click:
+### Removing Tasks
 
-- show the edit form instead of the title and remove button;
-- saves changes on the form submit (just press `Enter`);
-- save changes when the field loses focus (`onBlur`);
-- if the new title is the same as the old one just cancel editing;
-- cancel editing on `Esс` key `keyup` event;
-- if the new title is empty delete the todo the same way the `x` button does it;
-- if the title was changed show the loader while waiting for the API response;
-- update the todo title on success;
-- show `Unable to update a todo` in case of API error;
-- or the deletion error message if we tried to delete the todo.
+- Each task can be removed by clicking the "×" button next to it.
 
-## If you want to enable tests
-- open `cypress/integration/page.spec.js`
-- replace `describe.skip` with `describe` for the root `describe`
+### Marking Tasks as Completed/Uncompleted
 
-## Instructions
+- You can mark tasks as completed by checking the checkbox next to a task. Unchecking it marks the task as uncompleted.
 
-- Implement a solution following the [React task guideline](https://github.com/mate-academy/react_task-guideline#react-tasks-guideline).
-- Use the [React TypeScript cheat sheet](https://mate-academy.github.io/fe-program/js/extra/react-typescript).
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://spojrzenie.github.io/react_todo-app-with-api/) and add it to the PR description.
+### Task Filtering
+
+- You can filter tasks by status: all, active, or completed.
+- Click the corresponding tab on the top bar to display tasks matching the selected status.
+
+### Removing Completed Tasks
+
+- You can remove all completed tasks using the "Clear completed" button at the bottom of the page.
+
+### Task Counter
+
+- The bottom of the page displays a counter of remaining tasks to be completed.
+
+### Error Messages
+
+- In case of API issues or task operations, error messages are displayed at the top of the page and disappear after a few seconds.
+
+## Author
+
+- **Chris Janiewicz** - Code author of this ToDo application.
+
+## Acknowledgments
+
+Thank you for your interest in my ToDo application. I hope this project has contributed to your development in JavaScript and React programming. If you have any questions or suggestions, feel free to ask.
