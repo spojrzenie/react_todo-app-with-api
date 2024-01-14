@@ -1,5 +1,7 @@
 # React ToDo Application
 
+![GitHub Logo](/todoapp.png)
+
 ## Demo
 
 You can see the live demo of the application [here](https://spojrzenie.github.io/react_todo-app-with-api/).
